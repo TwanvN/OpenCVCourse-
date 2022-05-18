@@ -47,18 +47,12 @@ void showVideo() {
 
 void showCam() {
 	VideoCapture cap(0);
-	VideoCapture cap1(1);
-	VideoCapture cap2(2);
-	Mat img, img1, img2;
+	Mat img;
 
 	while (true) {
 		cap.read(img);
-		cap1.read(img1);
-		cap2.read(img2);
 
 		imshow("Image", img);
-		imshow("Image1", img1);
-		imshow("Image2", img2);
 		waitKey(1);
 	}
 }
