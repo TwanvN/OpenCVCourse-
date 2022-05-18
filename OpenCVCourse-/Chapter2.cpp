@@ -17,7 +17,7 @@ void video() {
 	cv::Mat imgGray, imgGaus, imgCanny, imgDilated, imgEroded;
 
 	cv::cvtColor(img, imgGray, cv::COLOR_BGR2GRAY);
-	cv::GaussianBlur(img, imgGaus, cv::Size(7, 7), 5, 0);
+	cv::GaussianBlur(imgGray, imgGaus, cv::Size(7, 7), 5, 0);
 	cv::Canny(imgGaus, imgCanny, 25, 75);
 
 	// Create circle kernel
