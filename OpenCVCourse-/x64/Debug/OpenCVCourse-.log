@@ -1,3 +1,4 @@
-﻿  Chapter1.cpp
-C:\Users\Jesse\Java\OpenCVCourse-\OpenCVCourse-\Chapter1.cpp(13,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
+﻿  PlateDetection.cpp
+C:\Users\Jesse\Java\OpenCVCourse-\OpenCVCourse-\PlateDetection.cpp(9,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
+C:\Users\Jesse\Java\OpenCVCourse-\OpenCVCourse-\PlateDetection.cpp(55,19): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
   OpenCVCourse-.vcxproj -> C:\Users\Jesse\Java\OpenCVCourse-\x64\Debug\OpenCVCourse-.exe
