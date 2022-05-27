@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 ﻿  Chapter7.cpp
 C:\Users\Twanv\Documents\School\Jaar 2\Periode 4\vision\repo\OpenCVCourse-\OpenCVCourse-\Chapter7.cpp(14,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
 C:\Users\Twanv\Documents\School\Jaar 2\Periode 4\vision\repo\OpenCVCourse-\OpenCVCourse-\Chapter7.cpp(49,12): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
 C:\Users\Twanv\Documents\School\Jaar 2\Periode 4\vision\repo\OpenCVCourse-\OpenCVCourse-\Chapter7.cpp(56,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   OpenCVCourse-.vcxproj -> C:\Users\Twanv\Documents\School\Jaar 2\Periode 4\vision\repo\OpenCVCourse-\x64\Debug\OpenCVCourse-.exe
+=======
+﻿  PlateDetection.cpp
+C:\Users\Jesse\Java\OpenCVCourse-\OpenCVCourse-\PlateDetection.cpp(9,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
+C:\Users\Jesse\Java\OpenCVCourse-\OpenCVCourse-\PlateDetection.cpp(55,19): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  OpenCVCourse-.vcxproj -> C:\Users\Jesse\Java\OpenCVCourse-\x64\Debug\OpenCVCourse-.exe
+>>>>>>> branch

@@ -4,14 +4,17 @@
 #include <iostream>
 
 
-void video();
 void ballstripes();
+void canyyTest();
+void cannySliders();
 
 void main() {
-	ballstripes();
+	//ballstripes();
+	//canyyTest();
+	cannySliders();
 }
 
-void video() {
+void canyyTest() {
 	std::string path = "Resources/test.png";
 	cv::Mat img = cv::imread(path);
 	cv::Mat imgGray, imgGaus, imgCanny, imgDilated, imgEroded;
@@ -36,6 +39,37 @@ void video() {
 
 
 	cv::waitKey();
+}
+
+void cannySliders()
+{
+	std::string path = "Resources/lovensdijkstraat_image.png";
+	cv::Mat img = cv::imread(path);
+	cv::Mat imgGray, imgGaus, imgCanny, imgDilated, imgEroded;
+
+	// Create the value's
+	int threshold1 = 25, threshold2 = 75;
+
+	// Operate to grayscale + blur
+	cv::cvtColor(img, imgGray, cv::COLOR_BGR2GRAY);
+	cv::GaussianBlur(img, imgGaus, cv::Size(7, 7), 5, 0);
+	
+	cv::namedWindow("Trackbars", (640, 200));
+	cv::createTrackbar("Threshold 1", "Trackbars", &threshold1, 255);
+	cv::createTrackbar("Threshold 2", "Trackbars", &threshold2, 255);
+	
+	
+	
+	while (true)
+	{
+		cv::Canny(imgGaus, imgCanny, threshold1, threshold2);
+
+		cv::imshow("original", img);
+		cv::imshow("Canny", imgCanny);
+
+		cv::waitKey(1);
+	}
+	
 }
 
 void ballstripes()
